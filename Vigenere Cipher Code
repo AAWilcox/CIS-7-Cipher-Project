@@ -128,7 +128,12 @@ int main()
       cout << "Plaintext: " << original_text << endl;
 
       cout << "Original Text: " << str << endl;
-    } 
+    }
+    
+  else
+    {
+      cout << "You did not input a 1 or a 2\n";
+    }
 
   cout << "\n\nDo you want to run the program again?" << endl;
   cin >> cont;
