@@ -34,6 +34,7 @@ Built With
 Authors
 
 •	Alyssa Wilcox
+
 •	Josue Salcedo
 
 Acknowledgements
