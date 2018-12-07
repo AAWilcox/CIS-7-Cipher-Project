@@ -10,12 +10,15 @@ Getting Started
 The program is case-sensitive and should be used with an all upper or lower-case message. The message and key word should all be the same; lower-case or upper-case.
 
 Example: 
+
 Message: 	THEBESTCODE
+
 Keyword: 	KEYWORD
 
 Or
 
 Message:	thebestcode
+
 Keyword: 	keyword
 
 
