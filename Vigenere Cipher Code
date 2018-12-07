@@ -1,8 +1,18 @@
+//Programmer:     Alyssa Wilcox, Josue Salcedo
+//Assignment:     Vigenere Cipher Code
+//Filename:       Vigenere_Cipher_Code.cpp
+//Creation Date:  November 15, 2018
+//Description:    Create a C++ program that encrypts and
+//                decrypts a message from the user
+
+
 #include <bits/stdc++.h>
 using namespace std;
 #include <iostream>
 
 //Generate Key
+//Uses a cycle to generate key until its length matches
+//the length of the original text
 string generateKey(string str, string key)
 {
   int x = str.size();
@@ -20,21 +30,29 @@ string generateKey(string str, string key)
 }
 
 //Encrypt
+//This function returns the encryption of the original
+//text with the help of the key
 string cipherText(string str, string key)
 {
   string cipher_text;
   int x;
+
   for (int i = 0; i < str.size(); i++)
   {
+    //For upper-case
     if (isupper(str[i]))
     {   
+      //Converts letters to numbers and shifts
       x = (str[i] + key[i]) % 26;
+      //Converts to alphabets
       x += 'A';
     }
-
+    //For lower-case
     if (islower(str[i]))
     {
+      //Converts letters to numbers and shifts
       x = ((str[i] + key[i] - 12) % 26);
+      //Converts to alphabets
       x += 'a';
     }
     cipher_text.push_back(x);
@@ -43,6 +61,8 @@ string cipherText(string str, string key)
 }
 
 //Decrypt
+//This function decrypts the original string
+//with the help of the key
 string originalText(string str, string key)
 {
   string orig_text;
@@ -50,19 +70,22 @@ string originalText(string str, string key)
 
   for(int i = 0; i < str.size(); i++)
   {
-
+    //For upper-case
     if (isupper(str[i]))
     {
+      //Converts letters to numbers and shifts
       x = (str[i] - key[i] + 26)%26;
+      //Converts to alphabets
       x += 'A';
     }
-
+    //For lower-case
     if (islower(str[i]))
     {
+      //Converts letters to numbers and shifts
       x = ((str[i] - key[i] + 26)%26);
+      //Converts to alphabets
       x += 'a';
     }
-
     orig_text.push_back(x);
   }
   return orig_text;
@@ -70,11 +93,13 @@ string originalText(string str, string key)
 
 int main()
 {
-  string str;
-  string keyword;
-  int choice;
-  char cont;
+  
+  string str;     //String to be encrypted/decrypted
+  string keyword; //String for keyw
+  int choice;     //Choice of encrypt or decrypt
+  char cont;      //Choice to run program again
 
+  //Do-while loop allows user to continue program
   do
   {
   cout << "Input string: " << endl;
@@ -86,30 +111,26 @@ int main()
  cout << "1.) Encrypt\n2.) Decrypt\n";
  cin >> choice;
 
-
+  //Encrypt
    if (choice == 1)
    {
   string key = generateKey(str, keyword);
   string cipher_text = cipherText(str, key);
 
-  cout << "Ciphertext: "
-  << cipher_text << endl;
+  cout << "Ciphertext: " << cipher_text << endl;
 
-  cout << "Original Text: "
-  << str;
+  cout << "Original Text: " << str << endl;
+   }
 
-    }
-
+  //Decrypt
   else if (choice == 2)
   {
   string key = generateKey(str, keyword);
   string original_text = originalText(str, key);
 
-  cout << "Plaintext: "
-  << original_text << endl;
+  cout << "Plaintext: " << original_text << endl;
 
-  cout << "Original Text: "
-  << str;
+  cout << "Original Text: " << str << endl;
   }
 
   cout << "\n\nDo you want to run the program again?" << endl;
