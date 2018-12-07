@@ -129,7 +129,8 @@ int main()
 
       cout << "Original Text: " << str << endl;
     }
-    
+  
+  //Catches invalid input
   else
     {
       cout << "You did not input a 1 or a 2\n";
