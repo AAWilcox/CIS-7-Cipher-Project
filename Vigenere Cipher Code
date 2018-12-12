@@ -92,8 +92,8 @@ string originalText(string str, string key)
 int main()
 {
   string str;     //String to be encrypted/decrypted
-  string keyword; //String for keyw
-  int choice;     //Choice of encrypt or decrypt
+  string keyword; //String for keyword
+  int choice;     //Choice to encrypt or decrypt
   char cont;      //Choice to run program again
 
   //Do-while loop allows user to continue program
