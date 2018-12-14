@@ -10,20 +10,20 @@ The program is case-sensitive and should be used with an all upper or lower-case
 
 Example: 
 
-ENCODING:                  DECODING:
-Message: 	THEBESTCODE      Message: 	GCYCZFMLYLEIM
+ENCODING:                       DECODING:
+Message: 	THEBESTCODE           Message: 	GCYCZFMLYLEIM
 
 
-Keyword: 	KEYWORD          Keyword:  KEYWORD
+Keyword: 	KEYWORD               Keyword:  KEYWORD
 
 
 Or
 
 
-Message:	thebestcode       Message: 	gcyczfmlyleim
+Message:	thebestcode            Message: 	gcyczfmlyleim
 
 
-Keyword: 	keyword          Keyword:  keyword
+Keyword: 	keyword               Keyword:  keyword
 
 
 Prerequisites: 
