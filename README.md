@@ -10,22 +10,21 @@ The program is case-sensitive and should be used with an all upper or lower-case
 
 Example: 
 
-ENCODING:                       DECODING:
-Message: 	THEBESTCODE           Message:
-GCYCZFMLYLEIM
-
-
-Keyword: 	KEYWORD               Keyword:  KEYWORD
-
+ENCODING:
+Message: 	THEBESTCODE
+Keyword: 	KEYWORD
 
 Or
 
+Message:	thebestcode
+Keyword: 	keyword
 
-Message:	thebestcode            Message: 	gcyczfmlyleim
+DECODING:
+Message:  GYCYZFMLYLEIM
+Keyword:  KEYWORD
 
-
-Keyword: 	keyword               Keyword:  keyword
-
+Message:  gcyczfmlyleim
+Keyword:  keyword
 
 Prerequisites: 
 
