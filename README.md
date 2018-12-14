@@ -11,7 +11,8 @@ The program is case-sensitive and should be used with an all upper or lower-case
 Example: 
 
 ENCODING:                       DECODING:
-Message: 	THEBESTCODE           Message: 	GCYCZFMLYLEIM
+Message: 	THEBESTCODE           Message:
+GCYCZFMLYLEIM
 
 
 Keyword: 	KEYWORD               Keyword:  KEYWORD
