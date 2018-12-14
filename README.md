@@ -28,6 +28,8 @@ Message:  GYCYZFMLYLEIM
 
 Keyword:  KEYWORD
 
+Or
+
 Message:  gcyczfmlyleim
 
 Keyword:  keyword
