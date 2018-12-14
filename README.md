@@ -13,11 +13,15 @@ Example:
 ENCODING:                  DECODING:
 Message: 	THEBESTCODE      Message: 	GCYCZFMLYLEIM
 
+
 Keyword: 	KEYWORD          Keyword:  KEYWORD
+
 
 Or
 
+
 Message:	thebestcode       Message: 	gcyczfmlyleim
+
 
 Keyword: 	keyword          Keyword:  keyword
 
